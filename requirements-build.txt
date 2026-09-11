@@ -1,0 +1,4 @@
+buildozer==1.6.0
+Cython==0.29.37
+virtualenv
+pytest

@@ -21,7 +21,7 @@ The application includes a local WebView dashboard for controlling a Pinggy reve
 |---|---|
 | Repository | [GitHub repository](https://github.com/shashidharganeshg/pocket-sms-relay) |
 | Build in Google Colab | [Open the shared Colab notebook](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing) |
-| Download pre-built APK | [Download `sms-gateway-oss-4.2.2-arm64-debug.apk`]([https://github.com/shashidharganeshg/pocket-sms-relay/raw/refs/heads/main/apk/](https://github.com/shashidharganeshg/pocket-sms-relay/tree/main/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)) |
+| Download pre-built APK | [Download `sms-gateway-oss-4.2.2-arm64-debug.apk`](https://github.com/shashidharganeshg/pocket-sms-relay/tree/main/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk) |
 | Build workflow | [GitHub Actions](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml) |
 | Report an issue | [GitHub Issues](https://github.com/shashidharganeshg/pocket-sms-relay/issues) |
 

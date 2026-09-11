@@ -1,0 +1,2 @@
+d55fcde5d56872bb6e7ba65ef234f314c847d3b2a0a6a0fc81261ac4c6fdedf1  sms-gateway-oss-4.2.2-arm64-debug.apk
+7d190a7c280f54745dcb1a0cb42e7726cee1d4b372f8ec58b838bd01fb1ba583  sms-gateway-oss-4.2.2-source.zip

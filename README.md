@@ -5,35 +5,29 @@
 [![Architecture](https://img.shields.io/badge/architecture-arm64--v8a-orange.svg)](#prerequisites--setup)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB.svg?logo=python&logoColor=white)](#prerequisites--setup)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Build APK](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml/badge.svg)](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing)
+[![Download APK](https://img.shields.io/badge/Download-APK-2ea44f.svg?logo=android&logoColor=white)](https://github.com/shashidharganeshg/pocket-sms-relay/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
 
 An open-source Android SMS gateway that exposes a bearer-token-protected HTTP API for sending SMS messages through an Android device and its active SIM card.
 
 The application includes a local WebView dashboard for controlling a Pinggy reverse SSH tunnel, viewing the generated public URL, copying or sharing a ready-to-use cURL command, and monitoring recent activity.
-
-
-> [!NOTE]
-> **Vibe-coded / AI-assisted project:** This project was developed iteratively with AI-assisted coding. The generated and suggested code has been organized, reviewed, tested, and documented as an open-source software project. Users and contributors should still review the implementation, security model, dependencies, and generated APK before using it in a production or sensitive environment.
 
 > [!WARNING]
 > Use this project only with devices, SIM cards, recipients, and networks you are authorized to use. Do not use it for spam, phishing, harassment, unsolicited bulk messaging, or bypassing carrier restrictions.
 
 ## Quick Links
 
-Replace `YOUR_USERNAME` and `YOUR_REPOSITORY` after publishing the repository.
-
-| Resource | Link template |
+| Resource | Link |
 |---|---|
-| Open in Google Colab | `https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPOSITORY/blob/main/SMS_Gateway_OSS_4_2_2_Builder.ipynb` |
-| Download latest APK | `https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases/latest/download/sms-gateway-oss-4.2.2-arm64-debug.apk` |
-| GitHub Releases | `https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases/latest` |
-| Report an issue | `https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/issues` |
+| Repository | [GitHub repository](https://github.com/shashidharganeshg/pocket-sms-relay) |
+| Build in Google Colab | [Open the shared Colab notebook](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing) |
+| Download pre-built APK | [Download `sms-gateway-oss-4.2.2-arm64-debug.apk`](https://github.com/shashidharganeshg/pocket-sms-relay/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk) |
+| Build workflow | [GitHub Actions](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml) |
+| Report an issue | [GitHub Issues](https://github.com/shashidharganeshg/pocket-sms-relay/issues) |
 
-After replacing the placeholders, enable these badges at the top of the README:
-
-```markdown
-[![Build APK](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/actions/workflows/android-debug.yml/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/actions/workflows/android-debug.yml)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPOSITORY/blob/main/SMS_Gateway_OSS_4_2_2_Builder.ipynb)
-```
+> [!IMPORTANT]
+> The APK download link works after `apk/sms-gateway-oss-4.2.2-arm64-debug.apk` has been uploaded to the `main` branch. The repository stores the APK directly for convenient testing; GitHub Releases remain preferable for long-term, versioned binary distribution.
 
 ## Table of Contents
 
@@ -51,6 +45,7 @@ After replacing the placeholders, enable these badges at the top of the README:
 - [Security Considerations](#security-considerations)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
 - [License](#license)
 
 ---
@@ -177,6 +172,8 @@ sms-gateway-oss/
 ├── static/
 │   ├── app.css
 │   └── app.js
+├── apk/
+│   └── sms-gateway-oss-4.2.2-arm64-debug.apk
 ├── assets/
 │   └── icon.png
 ├── tools/
@@ -193,6 +190,7 @@ sms-gateway-oss/
 ├── LICENSE
 ├── SECURITY.md
 ├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
 └── THIRD_PARTY_NOTICES.md
 ```
 
@@ -404,12 +402,14 @@ sudo apt-get install -y \
 
 Google Colab provides a disposable Linux environment and avoids configuring the Android toolchain manually.
 
-1. Open the project notebook:
+1. Open the shared project notebook:
 
-   Replace the placeholders and open:
+   [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing)
+
+   Direct notebook URL:
 
    ```text
-   https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPOSITORY/blob/main/SMS_Gateway_OSS_4_2_2_Builder.ipynb
+   https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing
    ```
 
 2. Select **Runtime → Change runtime type** and use the standard Python runtime.
@@ -464,8 +464,8 @@ exec(
 #### 1. Clone the repository
 
 ```bash
-git clone [Insert Repository Clone URL]
-cd sms-gateway-oss
+git clone https://github.com/shashidharganeshg/pocket-sms-relay.git
+cd pocket-sms-relay
 ```
 
 #### 2. Create an isolated Python environment
@@ -548,9 +548,9 @@ For a completely clean rebuild, remove Buildozer's generated build directory bef
 
 1. Download the APK:
 
-   **[Download Pre-Built APK — Insert APK Download Link]**
+   [**Download `sms-gateway-oss-4.2.2-arm64-debug.apk`**](https://github.com/shashidharganeshg/pocket-sms-relay/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
 
-2. Verify its SHA-256 checksum against the release's `SHA256SUMS.txt` file.
+2. Verify its SHA-256 checksum against `SHA256SUMS_4_2_2.txt` when that file is provided with the build artifacts.
 
 3. Transfer the APK to an ARM64 Android device.
 
@@ -947,43 +947,42 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.
 
 ### Google Colab
 
-The notebook must be committed to the repository before Colab can load it from GitHub. After replacing the repository placeholders, use:
+Build the APK online without installing the Android toolchain locally:
 
-```text
-https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPOSITORY/blob/main/SMS_Gateway_OSS_4_2_2_Builder.ipynb
-```
-
-Publish this active badge only after the URL works:
-
-```markdown
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPOSITORY/blob/main/SMS_Gateway_OSS_4_2_2_Builder.ipynb)
-```
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing)
 
 ### Pre-Built APK
 
-Upload the APK as an asset in a GitHub Release. If the release asset is named exactly `sms-gateway-oss-4.2.2-arm64-debug.apk`, the latest-download template is:
+The project keeps the current test APK under `apk/sms-gateway-oss-4.2.2-arm64-debug.apk` in the repository:
 
-```text
-https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases/latest/download/sms-gateway-oss-4.2.2-arm64-debug.apk
-```
+[![Download APK](https://img.shields.io/badge/Download-sms--gateway--oss--4.2.2--arm64--debug.apk-2ea44f.svg?logo=android&logoColor=white)](https://github.com/shashidharganeshg/pocket-sms-relay/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
 
-Do not point the README at a local file or a file that has not been uploaded to a release.
+If the button does not download the APK, confirm that the file exists at the exact path and filename shown above on the `main` branch.
 
-### Additional Resources
+### Project Resources
 
-Replace the placeholders after creating the repository:
+- [Repository](https://github.com/shashidharganeshg/pocket-sms-relay)
+- [Google Colab notebook](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing)
+- [APK download](https://github.com/shashidharganeshg/pocket-sms-relay/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
+- [GitHub Actions build workflow](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml)
+- [Issues](https://github.com/shashidharganeshg/pocket-sms-relay/issues)
+- [Security policy](SECURITY.md)
+- [Contribution guide](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Third-party notices](THIRD_PARTY_NOTICES.md)
+- [MIT License](LICENSE)
 
-- Repository: `https://github.com/YOUR_USERNAME/YOUR_REPOSITORY`
-- Releases: `https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases/latest`
-- Issues: `https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/issues`
-- Security policy: `SECURITY.md`
-- License: `LICENSE`
+---
+
+## Code of Conduct
+
+All contributors and community participants are expected to follow [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Report conduct concerns privately using the contact method identified in that document.
 
 ---
 
 ## License
 
-This project is licensed under the OSI-approved MIT License. See [LICENSE](LICENSE) for the complete terms. The `LICENSE` file must remain in the repository root and should be included with source distributions.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 Third-party components remain subject to their respective licenses. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 

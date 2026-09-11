@@ -1,0 +1,19 @@
+.buildozer/
+bin/
+release/
+build.log
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.apk
+*.aab
+*.jks
+*.keystore
+libs/arm64-v8a/*.so
+dropbear-build.json
+third_party/licenses/dropbear.txt
+
+# Keep the approved pre-built APK in the repository.
+!apk/
+!apk/sms-gateway-oss-4.2.2-arm64-debug.apk

@@ -6,7 +6,7 @@
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB.svg?logo=python&logoColor=white)](#prerequisites--setup)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing)
-[![Download APK](https://img.shields.io/badge/Download-APK-2ea44f.svg?logo=android&logoColor=white)](https://github.com/shashidharganeshg/pocket-sms-relay/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
+[![Download APK](https://img.shields.io/badge/Download-APK-2ea44f.svg?logo=android&logoColor=white)](https://github.com/shashidharganeshg/pocket-sms-relay/tree/main/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
 
 An open-source Android SMS gateway that exposes a bearer-token-protected HTTP API for sending SMS messages through an Android device and its active SIM card.
 
@@ -21,7 +21,7 @@ The application includes a local WebView dashboard for controlling a Pinggy reve
 |---|---|
 | Repository | [GitHub repository](https://github.com/shashidharganeshg/pocket-sms-relay) |
 | Build in Google Colab | [Open the shared Colab notebook](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing) |
-| Download pre-built APK | [Download `sms-gateway-oss-4.2.2-arm64-debug.apk`](https://github.com/shashidharganeshg/pocket-sms-relay/raw/refs/heads/main/apk/) |
+| Download pre-built APK | [`sms-gateway-oss-4.2.2-arm64-debug.apk`]([https://github.com/shashidharganeshg/pocket-sms-relay/raw/refs/heads/main/apk/](https://github.com/shashidharganeshg/pocket-sms-relay/tree/main/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)) |
 | Build workflow | [GitHub Actions](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml) |
 | Report an issue | [GitHub Issues](https://github.com/shashidharganeshg/pocket-sms-relay/issues) |
 

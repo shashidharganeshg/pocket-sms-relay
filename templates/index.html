@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="ui-token" content="{{ ui_token }}">
+  <title>SMS Gateway OSS</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <h1>📱 SMS Gateway OSS</h1>
+
+  <section class="card">
+    <div class="row"><strong>Status:</strong><span id="badge" class="badge stopped">STOPPED</span></div>
+    <p id="detail" class="muted">Loading…</p>
+    <h2>Public URL</h2>
+    <pre id="url" class="code">Waiting for Pinggy URL…</pre>
+    <div class="grid grid-three">
+      <button id="start" class="start" data-action="start">▶ Start</button>
+      <button id="stop" class="stop" data-action="stop">■ Stop</button>
+      <button class="refresh" data-action="refresh">↻ New URL</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="row"><strong>SMS permission:</strong><span id="permission-status" class="muted">Checking…</span></div>
+    <button id="permission" class="permission">Grant SMS permission</button>
+  </section>
+
+  <section class="card">
+    <h2>Bearer token</h2>
+    <p class="muted warning">Keep this secret. Anyone holding it can call the public SMS endpoint while the tunnel is online.</p>
+    <pre class="code token">{{ bearer_token }}</pre>
+  </section>
+
+  <section class="card">
+    <h2>Windows CMD cURL request</h2>
+    <pre id="curl" class="code">Start the tunnel to generate the command.</pre>
+    <div class="grid grid-two">
+      <button id="copy" class="copy">📋 Copy</button>
+      <button id="share" class="share">↗ Share</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Recent activity</h2>
+    <ul id="logs"><li>Loading…</li></ul>
+  </section>
+
+  <div id="toast" role="status"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

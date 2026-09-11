@@ -1,0 +1,16 @@
+diff --git a/src/dbutil.c b/src/dbutil.c
+--- a/src/dbutil.c
++++ b/src/dbutil.c
+@@ -636,6 +636,12 @@ int m_str_to_uint(const char* str, unsigned int *val) {
+ 	unsigned long l;
+ 	char *endp;
+
++	/*
++	 * strtoul() does not clear errno after a successful conversion.
++	 * Clear it so a stale Android/Bionic EINVAL does not reject port 0,
++	 * which is valid for server-allocated SSH remote forwarding ports.
++	 */
++	errno = 0;
+ 	l = strtoul(str, &endp, 10);
+ 	if (endp == str || *endp != '\0') {
+ 		/* parse error */

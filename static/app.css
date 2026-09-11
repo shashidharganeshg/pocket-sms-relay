@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 18px; background: #070b14; color: #e5edf8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+h1 { margin: 4px 0 18px; font-size: 25px; }
+h2 { margin: 14px 0 8px; font-size: 15px; }
+.card { margin-bottom: 15px; padding: 17px; border: 1px solid #2b405d; border-radius: 14px; background: #162235; }
+.row { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.badge { padding: 5px 10px; border-radius: 7px; font-size: 12px; font-weight: 800; }
+.online { background: #14532d; color: #86efac; }
+.working { background: #713f12; color: #fde68a; }
+.stopped { background: #334155; color: #d1d5db; }
+.error { background: #7f1d1d; color: #fecaca; }
+.muted { color: #9fb0c5; font-size: 13px; }
+.warning { color: #f8c978; }
+.code { margin: 7px 0 0; padding: 12px; border-radius: 9px; background: #0a1220; color: #55c8ff; font: 12px/1.5 monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+.token { color: #62e69a; }
+.grid { display: grid; gap: 9px; margin-top: 14px; }
+.grid-three { grid-template-columns: repeat(3, 1fr); }
+.grid-two { grid-template-columns: repeat(2, 1fr); }
+button { min-height: 45px; padding: 9px; border: 0; border-radius: 9px; color: white; font-size: 14px; font-weight: 800; cursor: pointer; }
+button:disabled { opacity: .38; cursor: not-allowed; }
+.start { background: #16a34a; }
+.stop { background: #dc2626; }
+.refresh { background: #0284c7; }
+.copy { background: #0d9488; }
+.share { background: #7c3aed; }
+.permission { width: 100%; margin-top: 12px; background: #d97706; }
+ul { margin-bottom: 0; padding-left: 20px; color: #c6d2e2; font-size: 12px; }
+li { margin-bottom: 7px; overflow-wrap: anywhere; }
+#toast { display: none; position: fixed; left: 18px; right: 18px; bottom: 18px; z-index: 5; padding: 12px; border: 1px solid #52657d; border-radius: 9px; background: #020617; text-align: center; }
+@media (max-width: 360px) { .grid-three, .grid-two { grid-template-columns: 1fr; } }

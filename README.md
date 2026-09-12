@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Build APK](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml/badge.svg)](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing)
-[![Download APK](https://img.shields.io/badge/Download-APK-2ea44f.svg?logo=android&logoColor=white)](https://github.com/shashidharganeshg/pocket-sms-relay/blob/main/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
+[![Download APK](https://github.com/shashidharganeshg/pocket-sms-relay/blob/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
 
 An open-source Android SMS gateway that exposes a bearer-token-protected HTTP API for sending SMS messages through an Android device and its active SIM card.
 
@@ -22,7 +22,7 @@ The application includes a local WebView dashboard for controlling a Pinggy reve
 |---|---|
 | Repository | [GitHub repository](https://github.com/shashidharganeshg/pocket-sms-relay) |
 | Build in Google Colab | [Open the shared Colab notebook](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing) |
-| Download pre-built APK | [`sms-gateway-oss-4.2.2-arm64-debug.apk`](https://github.com/shashidharganeshg/pocket-sms-relay/blob/main/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk) |
+| Download pre-built APK | [`sms-gateway-oss-4.2.2-arm64-debug.apk`](https://github.com/shashidharganeshg/pocket-sms-relay/blob/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk) |
 | Build workflow | [GitHub Actions](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml) |
 | Report an issue | [GitHub Issues](https://github.com/shashidharganeshg/pocket-sms-relay/issues) |
 
@@ -548,7 +548,7 @@ For a completely clean rebuild, remove Buildozer's generated build directory bef
 
 1. Download the APK:
 
-   [**Download `sms-gateway-oss-4.2.2-arm64-debug.apk`**](https://github.com/shashidharganeshg/pocket-sms-relay/blob/main/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
+   [**Download `sms-gateway-oss-4.2.2-arm64-debug.apk`**](https://github.com/shashidharganeshg/pocket-sms-relay/blob/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
 
 2. Verify its SHA-256 checksum against `SHA256SUMS_4_2_2.txt` when that file is provided with the build artifacts.
 
@@ -955,7 +955,7 @@ Build the APK online without installing the Android toolchain locally:
 
 The project keeps the current test APK under `apk/sms-gateway-oss-4.2.2-arm64-debug.apk` in the repository:
 
-[![Download APK](https://img.shields.io/badge/Download-sms--gateway--oss--4.2.2--arm64--debug.apk-2ea44f.svg?logo=android&logoColor=white)](https://github.com/shashidharganeshg/pocket-sms-relay/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
+[![Download APK](https://img.shields.io/badge/Download-sms--gateway--oss--4.2.2--arm64--debug.apk-2ea44f.svg?logo=android&logoColor=white)](https://github.com/shashidharganeshg/pocket-sms-relay/blob/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
 
 If the button does not download the APK, confirm that the file exists at the exact path and filename shown above on the `main` branch.
 
@@ -963,7 +963,7 @@ If the button does not download the APK, confirm that the file exists at the exa
 
 - [Repository](https://github.com/shashidharganeshg/pocket-sms-relay)
 - [Google Colab notebook](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing)
-- [APK download](https://github.com/shashidharganeshg/pocket-sms-relay/raw/refs/heads/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
+- [APK download](https://github.com/shashidharganeshg/pocket-sms-relay/blob/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
 - [GitHub Actions build workflow](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml)
 - [Issues](https://github.com/shashidharganeshg/pocket-sms-relay/issues)
 - [Security policy](SECURITY.md)

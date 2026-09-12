@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Build APK](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml/badge.svg)](https://github.com/shashidharganeshg/pocket-sms-relay/actions/workflows/android-debug.yml)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/135Cq4zEj80v9EF192VilD-D2rxyEN8AU?usp=sharing)
-[![Download APK](https://github.com/shashidharganeshg/pocket-sms-relay/blob/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
+[![Download APK](https://img.shields.io/badge/Download-APK-3DDC84?logo=android&logoColor=white)](https://raw.githubusercontent.com/shashidharganeshg/pocket-sms-relay/main/apk/sms-gateway-oss-4.2.2-arm64-debug.apk)
 
 An open-source Android SMS gateway that exposes a bearer-token-protected HTTP API for sending SMS messages through an Android device and its active SIM card.
 
